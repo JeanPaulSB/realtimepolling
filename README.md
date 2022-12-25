@@ -1,5 +1,7 @@
 # polling-app
 
+## Description
+hello
 ## Project setup
 ```
 npm install
