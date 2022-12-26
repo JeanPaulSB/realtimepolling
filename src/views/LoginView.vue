@@ -1,6 +1,6 @@
 <template>
-    <div class="flex items-center justify-center w-4/5 mx-auto lg:text-md h-2/5">
-        <div class="flex mt-8 items-center justify-center flex-col h-full  rounded-3xl w-full bg-main lg:w-2/6 shadow-2xl">
+    <div class="flex justify-center  w-4/5 mx-auto lg:text-md h-2/5">
+        <div class="flex mt-20 items-center justify-center flex-col h-full  rounded-3xl w-full bg-main lg:w-2/6 shadow-2xl">
            <form @submit.prevent="sendForm" class="mx-auto flex flex-col w-5/6">
             <h1 class="mx-auto lg:text-xl font-mono font-bold">Sign in</h1>
             <BaseInput label="Email" v-model="email"></BaseInput>

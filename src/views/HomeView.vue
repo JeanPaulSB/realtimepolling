@@ -1,13 +1,12 @@
 <template>
-  <div class="font-mono font-bold flex bg-secondary justify-center items-center w-full h-96">
-    <h1 class="text-dark w-3/6 text-2xl lg:text-8xl">Welcome {{ name }}</h1>
-    <Scoreboard></Scoreboard>
+  <div class="font-mono font-bold flex bg-white justify-center text-center items-center w-full h-screen">
+    <h1 class="text-dark w-full text-md text-md lg:text-2xl">Welcome to our page {{ userStore.getName }}</h1>
   </div>
 </template>
 
 <script>
 import Scoreboard from '@/components/Scoreboard.vue';
-
+import {useUserStore} from '@/store/userStore';
 // @ is an alias to /src
 
 
@@ -16,10 +15,11 @@ export default {
   components: {
     Scoreboard
   },
-  data(){
+  setup(){
+    const userStore = useUserStore();
     return {
-      'name':'Pedro'
+      userStore
     }
-  }
+  },
 };
 </script>
